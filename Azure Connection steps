@@ -1,0 +1,17 @@
+1-Azure login : 
+    -Email kariman01300708@h-eng.helwan.edu.eg
+    -Password : hashBugs9
+2-open IOTHub (ticketEasy-Rpi) :
+    -IOT Devices 
+    -Bus
+    -Copy the connection string - primary key 
+         it will be : (HostName=ticketEasy-Rpi.azure-devices.net;DeviceId=Bus;SharedAccessKey=/isWjL/c+7obVbHbk4Hm++0l5vse2qxtbmrIlam187I=)
+    -open the Device twin
+3-connect to raspberrypi 3
+  -through VNC or ssh
+  -open the terminal and type the following commands:
+   -cd iot-hub-python-raspberrypi-client-app
+   - python app.py 'connection string - primary key'
+   or :
+   -python app.py 'HostName=ticketEasy-Rpi.azure-devices.net;DeviceId=Bus;SharedAccessKey=/isWjL/c+7obVbHbk4Hm++0l5vse2qxtbmrIlam187I='
+4- refresh the bus twin in azure ('Rasp is connected')
